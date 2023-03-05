@@ -1,0 +1,18 @@
+{
+  "config": {
+    "error": {
+      "binaryError": "the input here must be binary without ending command"
+    },
+    "step": {
+      "user": {
+        "title": "Configure shade",
+        "description": "Provice binary code and a name to configure shade",
+        "data": {
+          "name": "Name",
+          "code": "Binary code",
+          "add_another": "Add another shade"
+        }
+      }
+    }
+  }
+}

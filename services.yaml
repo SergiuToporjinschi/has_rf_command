@@ -1,0 +1,32 @@
+send:
+  name: command
+  description: Sends a raw event on radio.
+  fields:
+    event:
+      name: Event
+      description: A binary string to send.
+      required: true
+      example: "11010111101"
+      selector:
+        text:
+# rf_shades:
+#   pin: 12
+#   repeat: 3
+#   pause: 8064
+#   init:
+#     len: 40
+#     time:
+#       high: 4117
+#       low: 2024
+#   bit:
+#     time:
+#       short: 338
+#       long: 676
+
+# cover:
+#   - platform: rf_shades
+#     code: "10000101 00110001 11111000 10110001"
+#     name: "office"
+#   - platform: rf_shades
+#     code: "10000101 00110001 01010010 10000001"
+#     name: "kitchen"
