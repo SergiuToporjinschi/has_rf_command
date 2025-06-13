@@ -60,7 +60,7 @@ async def async_setup_entry(hass: HomeAssistant, config_entry: ConfigEntry):
     hass.data.setdefault(DOMAIN, {})
     config_entry.async_on_unload(config_entry.add_update_listener(options_update_listener))
     hass.async_create_task(
-        hass.config_entries.async_forward_entry_setup(config_entry, "cover")
+        hass.config_entries.async_forward_entry_setups(config_entry, "cover")
     )
     return True
 
